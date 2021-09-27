@@ -1,0 +1,47 @@
+.navbar {
+  width: 100%;
+  height: auto;
+  background: #f04845;
+  color: #fee200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: 1px solid #000;
+  position: sticky;
+  z-index: 50;
+
+  &-heading {
+    h1 {
+      width: 100%;
+      margin-left: 20%;
+      font-size: 30px;
+
+      span {
+        color: #fff;
+      }
+    }
+  }
+
+  &-links {
+    ul {
+      display: flex;
+      list-style: none;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+      margin: 0px 5px;
+      padding: 7px;
+      background: lighten($color: #fee266, $amount: 15);
+      border-radius: 30px;
+      font-size: 20px;
+      transition: all 0.4s ease;
+
+      &:hover{
+          color: #f04845;
+      }
+    }
+  }
+}
